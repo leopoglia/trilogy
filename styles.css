@@ -71,7 +71,7 @@ header {
     background: url("https://videos-rockstargames-com.akamaized.net/screencaps/12237/_global/1920.jpg") center center / contain no-repeat;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 1080px) {
     #video {
         width: 100%;
         height: 60vmin;
