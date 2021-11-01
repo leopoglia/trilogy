@@ -1,20 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: BankGothicBT;
     src: url(09081caba15b8def6692.woff);
 }
 
-@import url(//db.onlinewebfonts.com/c/9b00faf25959e5d0a3615c085585a325?family=RDR+Catalogue+Bold);
+@font-face {
+    font-family: Fonte1;
+    src: url(43c87a78e295c91e475d.woff);
+}
+
+@font-face {
+    font-family: Fonte2;
+    src: url(daffe25cf3a522a0662b.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
 }
 
 header {
     width: 100%;
+    transition: top 0.2s ease-in-out;
+    z-index: 100;
 }
 
 .menu {
@@ -22,13 +33,12 @@ header {
     height: 60px;
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 2px solid rgb(22, 22, 22);
-    ;
     display: flex;
     align-items: center;
     position: fixed;
     align-content: center;
     justify-content: center;
-    top: 0
+    top: 0;
 }
 
 #listras {
@@ -72,6 +82,69 @@ header {
 }
 
 .container {
+    padding-top: 53px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.texto {
+    width: 47.5%;
     height: 100vh;
+}
+
+#boletim {
+    color: #e8e8e8;
+    display: flex;
+}
+
+ul {
+    font-family: Fonte1;
+    font-size: 16px;
+}
+
+.traco {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%277%27 height=%2724%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M6.75.313a.2.2 0 0 1 .15.24L1.617 23.804a.2.2 0 0 1-.24.15l-1.181-.268a.2.2 0 0 1-.15-.24L5.328.196a.2.2 0 0 1 .24-.15L6.75.312Z%27 fill=%27%23161616%27 fill-opacity=%27.4%27/%3E%3C/svg%3E");
+    filter: var(--breadcrumb-separator-filter-invert, invert(1));
+    height: 24px;
+    margin: 0 0.5rem;
+    width: 7px;
+}
+
+.titulo-1 {
+    padding-top: 45px;
+    line-height: 53px;
+    font-family: BankGothicBT;
+    background-image: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 48px;
+}
+
+.titulo-2 {
+    padding-top: 10px;
+    line-height: 35px;
+    font-family: BankGothicBT;
+    color: white;
+    font-size: 30px;
+}
+
+.data-22-10-2021 {
+    padding-top: 37px;
+    font-family: Fonte1;
+    font-size: 16px;
+    color: rgb(166, 166, 166);
+}
+
+.texto-1 {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Fonte2;
+    font-size: 19px;
 }
