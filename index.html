@@ -16,11 +16,36 @@
 
         <div class="menu">
 
-            <div class="tres-listras">
+            <div onclick="myFunction()" class="tres-listras">
                 <div id="listras"></div>
                 <div id="listras"></div>
                 <div id="listras"></div>
+
+
+
             </div>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.tres-listras')) {
+                        var dropdowns = document.getElementsByClassName("tres-listras");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
+
 
             <div class="logo">
                 <div id="logo-site"></div>
@@ -32,6 +57,13 @@
     </header>
 
     <main>
+
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
 
         <div id="video"></div>
 
@@ -54,24 +86,66 @@
                 <div class="data-22-10-2021">22 de outubro de 2021</div>
                 <div class="texto-1">Três cidades icônicas, três histórias épicas, uma coleção definitiva. Grand Theft Auto: The Trilogy – The Definitive Edition inclui <b>Grand Theft Auto III, Grand Theft Auto: Vice City e Grand Theft Auto: San Andreas</b> , os jogos que
                     definiram o gênero, aprimorados para a nova geração e disponibilizados juntos para PlayStation 5, Xbox Series X|S, Nintendo Switch, PlayStation 4, Xbox One, e PC pelo Rockstar Games Launcher.
-                    <p><br>Grand Theft Auto: The Trilogy – The Definitive Edition estará disponível digitalmente no dia 11 de novembro na PlayStation Store, na Microsoft Store do Xbox, na Nintendo eShop e no Rockstar Games Launcher. A coleção também será
-                        lançada em mídia física para Xbox Series X|S e Xbox One, Nintendo Switch, e PlayStation 4 no dia 7 de dezembro.</p>
-                </div>
+                    <br><br>Grand Theft Auto: The Trilogy – The Definitive Edition estará disponível digitalmente no dia 11 de novembro na PlayStation Store, na Microsoft Store do Xbox, na Nintendo eShop e no Rockstar Games Launcher. A coleção também
+                    será lançada em mídia física para Xbox Series X|S e Xbox One, Nintendo Switch, e PlayStation 4 no dia 7 de dezembro.</div>
             </div>
         </div>
 
-        <div class="div-trem">
-            <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4kaa7414o5k979/9d5dc1f9bea46d4f4938b38e6f3bd069719b5ac7.jpg" alt="gta3" class="trem">
+        <div class="div-img">
+            <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4kaa7414o5k979/9d5dc1f9bea46d4f4938b38e6f3bd069719b5ac7.jpg" alt="gta3" class="images">
         </div>
 
         <div class="container">
             <div class="texto">
                 <div class="texto-2">Mergulhe nos jogos que deram início a tudo, apresentando um senso de liberdade e imersão sem precedentes em três mundos dinâmicos e vibrantes, repletos de ação, humor, narrativas ricas e cinematográficas, personagens icônicos e trilhas
-                    sonoras inesquecíveis. Trazendo os mundos clássicos de Liberty City, Vice City e San Andreas para as plataformas atuais, Grand Theft Auto: The Trilogy – The Definitive Edition introduz novos controles modernos inspirados no GTAV e
-                    diversos aprimoramentos visuais, como melhorias na resolução e na fidelidade visual por todo o mundo. Além disso, ainda fizemos uma série de outros ajustes e aperfeiçoamentos nos três jogos sem deixar de preservar a estética distinta
-                    dos jogos originais.</div>
+                    sonoras inesquecíveis.<br><br>Trazendo os mundos clássicos de Liberty City, Vice City e San Andreas para as plataformas atuais, Grand Theft Auto: The Trilogy – The Definitive Edition introduz novos controles modernos inspirados no
+                    GTAV e diversos aprimoramentos visuais, como melhorias na resolução e na fidelidade visual por todo o mundo. Além disso, ainda fizemos uma série de outros ajustes e aperfeiçoamentos nos três jogos sem deixar de preservar a estética
+                    distinta dos jogos originais.</div>
             </div>
         </div>
+
+        <div class="div-img">
+            <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4kaa7414o5k979/da31c506d5ea55a4fcf17d282fff478a2c96bfe4.jpg" alt="" class="images">
+        </div>
+
+        <div class="container">
+            <div class="texto">
+                <div class="texto-2"><b>Grand Theft Auto: The Trilogy – The Definitive Edition</b> introduz controles modernos amplos, incluindo aprimoramentos de mira, menus de armas e de estações de rádio atualizados, minimapas com melhor navegação – permitindo que os jogadores
+                    definam rotas até seus destinos -, Conquistas e Troféus atualizados, e muito mais. A versão para Nintendo Switch também conta com controles específicos para o console, incluindo mira com o giroscópio, navegação de menus e controles
+                    de zoom e movimento da câmera na tela tátil. A versão para PC inclui suporte para NVIDIA DLSS, além de novas conquistas para membros do Social Club da Rockstar Games.<br> <br> Outras melhorias nos três títulos incluem um sistema de
+                    iluminação totalmente reformulado; sombras, clima e reflexos aprimorados; melhorias nos modelos de personagens e veículos; texturas de alta resolução em prédios, armas, estradas, áreas internas e muito mais. Grand Theft Auto: The Trilogy
+                    – The Definitive Edition também traz uma série de melhorias no ambiente, como folhagens totalmente novas, superfícies mais lisas e distâncias maiores de renderização, que oferecem um nível inédito de detalhe e nitidez ao mundo.</div>
+            </div>
+        </div>
+
+        <div class="div-img">
+            <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4kaa7414o5k979/5cc492af48e9cd99e6e598951c4ef032829e74fe.jpg" alt="" class="images">
+        </div>
+
+        <div class="container">
+            <div class="texto">
+                <div class="texto-2">Originalmente desenvolvido pela Rockstar Games, <b>Grand Theft Auto: The Trilogy – The Definitive Edition</b> foi adaptado para as plataformas atuais pela Grove Street Games usando a Unreal Engine para tornar estes clássicos mais vibrantes
+                    e imersivos do que nunca, celebrando o legado da franquia que redefiniu o entretenimento interativo e ajudou a colocar os videogames no centro da cultura. Fique de olho no Boletim da Rockstar para mais informações e confira o novo
+                    site de Grand Theft Auto: The Trilogy – The Definitive Edition. <br> <br>Jogadores também poderão aproveitar Grand Theft Auto: San Andreas – The Definitive Edition através do Xbox Game Pass a partir de 11 de novembro. <br> <br>Grand
+                    Theft Auto III – The Definitive Edition estará disponível para PlayStation Now a partir de 7 de dezembro. <br> <br> Além disso, espere mais surpresas divertidas e especiais para a celebração do 20º aniversário de Grand Theft Auto III
+                    em GTA Online — como a camiseta taco de beisebol de bônus esta semana, que comemora a arma corpo a corpo mais icônica de GTA III.</div>
+            </div>
+
+        </div>
+
+
+
+        <div class="botao-reserve">
+            <div id="reserva">RESERVE JÁ</div>
+        </div>
+
+        <div class="noticia-relacionadas">
+            <div id="noticia">Notícias relacionadas</div>
+
+        </div>
+
+
+
     </main>
 
 
