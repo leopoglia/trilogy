@@ -16,7 +16,7 @@
 
         <div class="menu">
 
-            <div onclick="myFunction()" class="tres-listras">
+            <div onclick="listras()" class="tres-listras">
                 <div id="listras1"></div>
                 <div id="listras2"></div>
                 <div id="listras3"></div>
@@ -26,7 +26,7 @@
             </div>
 
             <script>
-                function myFunction() {
+                function listras() {
                     document.getElementById("myDropdown").classList.toggle("show");
                 }
                 window.onclick = function(event) {
@@ -49,10 +49,33 @@
                 <div id="logo-site"></div>
             </div>
 
-            <div id="login"></div>
+            <div onclick="login()" id="login"></div>
 
+            <script>
+                function login() {
+                    document.getElementById("login-pagina").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('#login')) {
+                        var dropdowns = document.getElementsByClassName("login");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
 
     </header>
+
+    <div id="login-pagina" class="login-aba">
+        <a id="sessao" href="#about">Iniciar sessão</a>
+        <a href="#contact">Junte-se ao Social Club</a>
+    </div>
+    </div>
 
     <main>
 
