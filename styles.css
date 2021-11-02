@@ -98,17 +98,21 @@ header {
     z-index: 1;
     height: 100%;
     width: 42%;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
 }
 
 .dropdown-content a {
     color: rgb(255, 255, 255);
-    padding: 12px 16px;
+    padding: 15px 15%;
     text-decoration: none;
     display: block;
+    font-family: Fonte1;
+    font-size: 30px;
 }
 
-.dropdown a:hover {
-    background-color: #ddd;
+a:hover {
+    color: #fcaf17;
 }
 
 .show {
@@ -121,6 +125,32 @@ header {
     height: 65px;
     background-color: #111;
     border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+#lupa {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2724%27 height=%2724%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm9.998 2-4.35-4.35%27 stroke=%27%23fff%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    margin-left: 28px;
+}
+
+#input-home {
+    width: 75%;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: Fonte1;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: rgb(172, 172, 172);
 }
 
 .logo {
