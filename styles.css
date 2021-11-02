@@ -120,7 +120,7 @@ header {
     background-color: rgba(0, 0, 0, 0.96);
     z-index: 1;
     right: 0;
-    height: 20%;
+    min-height: 122px;
     width: 18.8%;
     border-radius: 0 0 0 3px;
 }
