@@ -29,8 +29,6 @@
                 function myFunction() {
                     document.getElementById("myDropdown").classList.toggle("show");
                 }
-
-                // Close the dropdown if the user clicks outside of it
                 window.onclick = function(event) {
                     if (!event.target.matches('.tres-listras')) {
                         var dropdowns = document.getElementsByClassName("tres-listras");
@@ -64,7 +62,7 @@
                 <input type="text" placeholder="Pesquisar na Cepexis Games" id="input-home">
             </div>
 
-            <a href="#home">Boletim</a>
+            <a id="laranja" href="#home">Boletim</a>
             <a href="#about">Jogos</a>
             <a href="#contact">Vídeos</a>
             <a href="#contact">Downloads</a>
@@ -72,11 +70,12 @@
             <a href="#contact">Social Club</a>
             <a href="#contact">Launcher</a>
             <a href="#contact">Store</a>
-            <a href="#contact">Store</a>
+            <div id="espaco-home"></div>
+
 
         </div>
 
-        <div id="video"></div>
+        <img id="video" src="https://videos-rockstargames-com.akamaized.net/screencaps/12237/_global/1920.jpg" alt="">
 
         <div class="container">
 
