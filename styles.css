@@ -79,19 +79,27 @@ header {
 @keyframes indo {
     0% {
         left: -40%;
-        top: 30px;
+        top: 0px;
     }
     100% {
         left: 0;
-        top: 30px;
+        top: 0px;
     }
+}
+
+#setinha {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2724%27 height=%2724%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3%27 stroke=%27%23fff%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    color: transparent;
 }
 
 .dropdown-content {
     padding-top: 38px;
     animation-name: indo;
+    margin-top: 62px;
     animation-duration: 0.5s;
-    margin-top: 32px;
     display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.96);
@@ -108,6 +116,8 @@ header {
     display: block;
     font-family: Fonte1;
     font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 a:hover {
