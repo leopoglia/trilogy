@@ -51,8 +51,8 @@ body {
 
 .fundo-login{
     padding: 2%;
-    width: 30%;
-    height: 300px;
+    min-width: 30%;
+    min-height: 300px;
     background-color: white;
     border-radius: 3px;
 }
