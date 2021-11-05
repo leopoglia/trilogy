@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <link rel="stylesheet" href="donwload.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/meta-icons/rockstar/favicon-32x32.png">
+    <title>Rockstar Games</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu">
+
+            <div onclick="listras()" class="tres-listras">
+                <div id="listras1"></div>
+                <div id="listras2"></div>
+                <div id="listras3"></div>
+
+
+
+            </div>
+
+            <script>
+                function listras() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.tres-listras')) {
+                        var dropdowns = document.getElementsByClassName("tres-listras");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
+            <div class="logo">
+            <a href="index.html"><div id="logo-site"></div></a>  
+            </div>
+
+            <div onclick="login()" id="login"></div>
+
+            <script>
+                function login() {
+                    document.getElementById("login-pagina").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('#login')) {
+                        var dropdowns = document.getElementsByClassName("login");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
+    </header>
+
+    <div id="login-pagina" class="login-aba">
+        <a id="sessao" href="login/login.html">Iniciar sessão</a>
+        <a href="login/login.html">Junte-se ao Social Club</a>
+
+
+
+
+        
+    </div>
+    </div>
+
+    <main>
+
+        <div id="myDropdown" class="dropdown-content">
+            <div class="div-imput">
+                <div id="lupa"></div>
+                <input type="text" placeholder="Pesquisar na Rockstar Games" id="input-home">
+            </div>
+
+            <a id="laranja" href="#home">Boletim</a>
+            <a href="donwload.html">Jogos</a>
+            <a href="donwload.html">Vídeos</a>
+            <a href="donwload.html">Downloads</a>
+            <a href="donwload.html">Suporte <div id="setinha"></div> </a>
+            <a href="donwload.html">Social Club   <div id="setinha"></div> </a>
+            <a href="donwload.html">Launcher <div id="setinha"></div> </a>
+            <a href="donwload.html">Store <div id="setinha"></div> </a>
+            <div id="espaco-home"></div>
+
+
+        </div>
+
+
+        <div class="container-jogo">
+
+            <div id="logo-trilogy"></div>
+
+        </div>
+
+
+        <div class="div-comprar">
+
+            
+            <button id="botao-comprar">RESERVE JÁ</button>
+
+        </div>
+
+        <div class= "div-poss">
+
+            <div id="ps5"></div>
+            <div id="xbox-s"></div>
+            <div id="xbox-one"></div>
+            <div id="nintendo"></div>
+            <div id="pc"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="rodape">
+
+        
+           <div class="links-rodape">
+               <a href="">Corporativo</a>
+               <a href="">Privacidade</a>
+               <a href="">Cookies</a>
+               <a href="">Aviso Legal</a>
+               <a href="">Não vendam as minhas informações</a>
+            </div>
+
+            <div class="redes-sociais">
+
+                <div id="twitch"></div>
+                <div id="insta"></div>
+                <div id="twt"></div>
+                <div id="youtube"></div>
+                <div id="face"></div>
+           </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
