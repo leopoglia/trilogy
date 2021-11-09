@@ -284,6 +284,7 @@ ul {
     background-image: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     font-size: 48px;
 }
 
@@ -353,6 +354,7 @@ ul {
     background-image: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .noticia-relacionadas {
@@ -515,4 +517,8 @@ ul {
     height: 24px;
     margin-right: 2%;
     cursor: pointer;
+}
+
+.botao-reserve a{
+    text-decoration: none;
 }

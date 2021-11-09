@@ -383,6 +383,7 @@ input::placeholder {
     font-family: BankGothicBT;
     font-size: 25px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #botao-comprar:hover{
