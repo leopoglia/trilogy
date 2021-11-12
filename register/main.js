@@ -24,6 +24,7 @@ function adicionarDados(){
     window.location.href = "https://leopoglia.github.io/trilogy/";
     },300);
 
+    
 }
 
 
