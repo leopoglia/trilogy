@@ -22,7 +22,7 @@ function adicionarDados(){
 
     setTimeout(function(){
     window.location.href = "https://leopoglia.github.io/trilogy/";
-    },1500);
+    },1550);
 
     
 }
